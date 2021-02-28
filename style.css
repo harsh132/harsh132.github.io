@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	background-color: #eee;
+	font-family: "open sans", sans-serif;
+}
+
+.nav {
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(4px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 30px;
+	position: fixed;
+	width: 100%;
+}
+
+.container {
+	margin: auto;
+	width: 1300px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+.brand {
+	font-family: "Montserrat", sans-serif;
+	color: #eee;
+	padding: 10px;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 32px;
+}
+
+.nav-sec {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-item {
+	padding: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #222;
+}
+
+.nav-item:hover {
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	background: rgb(255, 255, 255, 0.1);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+section {
+	text-align: center;
+	/* min-height: 100vh; */
+	padding: 80px 2px;
+}
+
+#home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: -1;
+}
+
+#home img {
+	max-width: 500px;
+	border-radius: 50%;
+}
+
+.banner {
+	font-size: 60px;
+	font-family: "montserrat", sans-serif;
+}
+
+.banner h1 {
+	margin: 10px;
+}
+
+h1.heading {
+	font-family: "Poppins", sans-serif;
+	font-size: 50px;
+}
+
+#about div {
+	font-size: 1.5em;
+}
