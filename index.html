@@ -10,20 +10,23 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="nav">
+		<nav>
 			<div class="container">
-				<div class="brand">Harsh Prakash</div>
-				<div class="nav-sec">
-					<a href="#home" class="nav-item">Home</a>
-					<a href="#about" class="nav-item">About</a>
-					<a href="#projects" class="nav-item">Projects</a>
-					<a href="#achievements" class="nav-item">Achievements</a>
-					<a href="#education" class="nav-item">Education</a>
-					<a href="#skills" class="nav-item">Skills</a>
-					<a href="#contact" class="nav-item">Contact</a>
+				<div class="brand">
+					<span>Harsh Prakash</span>
+					<span class="burger" onclick="toggle()"><span id="menu" class="icon icon-menu"></span></span>
+				</div>
+				<div class="nav-sec hidden" id="nav-sec">
+					<a href="#home" class="nav-item" onclick="toggle()">Home</a>
+					<a href="#about" class="nav-item" onclick="toggle()">About</a>
+					<a href="#projects" class="nav-item" onclick="toggle()">Projects</a>
+					<a href="#achievements" class="nav-item" onclick="toggle()">Achievements</a>
+					<a href="#education" class="nav-item" onclick="toggle()">Education</a>
+					<a href="#skills" class="nav-item" onclick="toggle()">Skills</a>
+					<a href="#contact" class="nav-item" onclick="toggle()">Contact</a>
 				</div>
 			</div>
-		</div>
+		</nav>
 		<section id="home">
 			<img src="assets/harsh2.jpg" alt="" />
 			<div class="banner">
@@ -33,16 +36,41 @@
 		</section>
 		<section id="about">
 			<h1 class="heading">ABOUT</h1>
-			<div>
-				I am a B. Tech. undergraduate at <b>Indian institute of Information Technology, Pune</b> in branch <b>Computer Science and Engineering</b>.<br />
-				I love to solve problems and build cool new things.I am a proficient <b>programmer</b>, <b>web developer</b> and a noob graphic designer.
+			<div class="container">
+				I am a B. Tech. undergraduate at <b>Indian institute of Information Technology, Pune</b> in branch <b>Computer Science and Engineering</b>. I love to solve problems and build cool new
+				things.I am a proficient <b>programmer</b>,a full-stack <b>web developer</b> and a noob graphic designer.
 			</div>
 		</section>
 		<section id="projects">
 			<h1 class="heading">PROJECTS</h1>
-			<div>
-				I am a B. Tech. undergraduate at <b>Indian institute of Information Technology, Pune</b> in branch <b>Computer Science and Engineering</b>.<br />
-				I love to solve problems and build cool new things.I am a proficient <b>programmer</b>, <b>web developer</b> and a noob graphic designer.
+			<div class="container">
+				<div class="grid">
+					<div class="card">
+						<a href="https://eclecticiiitp.in">
+							<img src="assets/eclectic.jpeg" alt="" />
+							<div class="cbody">
+								<h3>EclecticIIITP.in</h3>
+								<span>
+									IIIT Pune's Literary club's website.<br />
+									FrontEnd: HTML, JS, CSS<br />
+									BackEnd: PHP,MYSQL
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<img src="assets/eclectic.jpeg" alt="" />
+						<h3>EclecticIIITP.in</h3>
+					</div>
+					<div class="card">
+						<img src="assets/eclectic.jpeg" alt="" />
+						<h3>EclecticIIITP.in</h3>
+					</div>
+					<div class="card">
+						<img src="assets/eclectic.jpeg" alt="" />
+						<h3>EclecticIIITP.in</h3>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="education"></section>
