@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #eee;
+	background-color: #f8f8f8;
 	font-family: "open sans", sans-serif;
 }
 
@@ -159,8 +159,24 @@ section {
 	padding: 0;
 }
 
-#projects {
+#projects,
+#education,
+#contact {
+	background: #f0f0f0;
+}
+
+#footer {
 	background: #e8e8e8;
+	border-top: 1px solid #e0e0e0;
+}
+
+.f1 {
+	font-size: 1.2rem;
+}
+
+.f1 > span {
+	color: red;
+	font-size: 1.5rem;
 }
 
 #home img {
@@ -199,14 +215,18 @@ section .container {
 	overflow: hidden;
 }
 
+.card h3 {
+	margin-top: 0;
+}
+
 .cbody {
-	padding: 10px;
+	padding: 15px;
 	font-size: 1.2rem;
 }
 
 .card:hover {
 	transition: ease-in-out 0.3s;
-	transform: scale(1.03);
+	transform: scale(1.03) translateY(-10px);
 }
 
 .card img {
@@ -215,6 +235,27 @@ section .container {
 
 .grid .container {
 	margin: 10px;
+}
+
+.grid2 {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+
+.grid2 h3 {
+	margin: 0;
+	font-size: 16px;
+}
+
+#skills .icon-star {
+	color: gold;
+	font-weight: 100;
+}
+
+#skills .icon-star-empty {
+	color: grey;
+	font-weight: 100;
 }
 
 @media only screen and (max-width: 700px) {
