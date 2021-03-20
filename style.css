@@ -129,6 +129,7 @@ nav .brand button {
 	padding: 10px;
 	font-weight: 400;
 	color: #222;
+	transition: all 0.5s ease;
 }
 
 a {
@@ -163,6 +164,25 @@ section {
 #education,
 #contact {
 	background: #f0f0f0;
+}
+
+.ab {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.link img {
+	vertical-align: middle;
+}
+
+a.link {
+	color: #0066a3;
+}
+
+a.link:hover {
+	color: #2cb0ff;
+	/* text-decoration: underline; */
 }
 
 #footer {
@@ -220,13 +240,14 @@ section .container {
 }
 
 .cbody {
-	padding: 15px;
+	padding: 15px 15px 25px;
 	font-size: 1.2rem;
 }
 
 .card:hover {
-	transition: ease-in-out 0.3s;
-	transform: scale(1.03) translateY(-10px);
+	transition: all ease-in-out 0.5s;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px 5px #aaa;
 }
 
 .card img {
@@ -258,11 +279,16 @@ section .container {
 	font-weight: 100;
 }
 
+#contact img {
+	width: 30px;
+}
+
 @media only screen and (max-width: 700px) {
 	#home img {
 		max-width: 80%;
 	}
-	.grid {
+	.grid,
+	.ab {
 		grid-template-columns: 1fr !important;
 	}
 }
