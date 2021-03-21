@@ -15,3 +15,6 @@ window.addEventListener("scroll", function () {
 		nav.style.background = "rgba(255, 255, 255, 0.3)";
 	}
 });
+var imgs = document.querySelectorAll("img[data-src]").forEach(function (i) {
+	i.src = i.dataset.src;
+});
