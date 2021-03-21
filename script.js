@@ -1,18 +1,6 @@
-const home = document.querySelector("#home");
-const nav = document.querySelector("nav");
-const navSec = document.getElementById("nav-sec");
-const menu = document.getElementById("menu");
-
-VANTA.WAVES({
-	el: document.querySelector("#home"),
-	mouseControls: true,
-	touchControls: true,
-	gyroControls: false,
-	minHeight: 200.0,
-	minWidth: 200.0,
-	scale: 0.8,
-	scaleMobile: 1.0,
-});
+var nav = document.querySelector("nav");
+var navSec = document.getElementById("nav-sec");
+var menu = document.getElementById("menu");
 
 function toggle() {
 	navSec.classList.toggle("hidden");
